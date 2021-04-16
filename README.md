@@ -15,3 +15,4 @@ Hidden Layer: It Contains 5 Nodes and gets activated by Sigmoid Function Sepal L
 Output Layer: The weight Corresponding to Output Layer are W1,W2,W3,W4,W5 , these get multiplied with the input computed as outputs from hidden layer with 5 Node.
                                It contains a Single Node and Classify the Flower as Setosa(0) & Versicolour(1).
 
+ WORKING: You will Find all information about Code in Comments as Provide in cpp file. 
