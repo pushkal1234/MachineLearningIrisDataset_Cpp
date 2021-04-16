@@ -80,23 +80,23 @@ int main()
 
                              SW1 = SW1 + alpha * err * pred1*(1-pred1) * SW[idx];
                              SW2 = SW2 + alpha * err * pred2*(1-pred2) * SW[idx];
-                             SW3 = SW3 + alpha * err * pred3*(1-pred3) * SW[idx];
+                             SW3 = SW3 + alpha * err * pred3*(1-pred3) * SW[idx];          //Updating Weights by Gradient descent associated with Sepal Width INPUT
                              SW4 = SW4 + alpha * err * pred4*(1-pred4) * SW[idx];
                              SW5 = SW5 + alpha * err * pred5*(1-pred5) * SW[idx];
                                    PL1 = PL1 + alpha * err * pred1*(1-pred1) * PL[idx];
                                    PL2 = PL2 + alpha * err * pred2*(1-pred2) * PL[idx];
-                                   PL3 = PL3 + alpha * err * pred3*(1-pred3) * PL[idx];
+                                   PL3 = PL3 + alpha * err * pred3*(1-pred3) * PL[idx];        //Updating Weights by Gradient descent associated with Petal Length INPUT
                                    PL4 = PL4 + alpha * err * pred4*(1-pred4) * PL[idx];
                                    PL5 = PL5 + alpha * err * pred5*(1-pred5) * PL[idx];
                  PW1 = PW1 + alpha * err * pred1*(1-pred1) * PW[idx];
                  PW2 = PW2 + alpha * err * pred2*(1-pred2) * PW[idx];
-                 PW3 = PW3 + alpha * err * pred3*(1-pred3) * PW[idx];
+                 PW3 = PW3 + alpha * err * pred3*(1-pred3) * PW[idx];                      //Updating Weights by Gradient descent associated with Petal Width INPUT
                  PW4 = PW4 + alpha * err * pred4*(1-pred4) * PW[idx];
                  PW5 = PW5 + alpha * err * pred5*(1-pred5) * PW[idx];
         W1 = W1 + alpha * err * output*(1-output) * pred1;
         W2 = W2 + alpha * err * output*(1-output) * pred2;
         W3 = W3 + alpha * err * output*(1-output) * pred3;
-        W4 = W4 + alpha * err * output*(1-output) * pred4;
+        W4 = W4 + alpha * err * output*(1-output) * pred4;                            //Updating Weights for Final Output Node
         W5 = W5 + alpha * err * output*(1-output) * pred5;
         cout<<"B1="<<b1<<" "<<"B2="<<b2<<" "<<"B3="<<b3<<" "<<"B4="<<b4<<" "<<"B5="<<b5<<" "<<"B6="<<b6
         <<"SL1="<<SL1<<" "<<"SL2="<<SL2<<" "<<"SL3="<<SL3<<" "<<"SL4="<<SL4<<" "
@@ -111,7 +111,7 @@ int main()
     cout<<"Final Values are: "<<"B1="<<b1<<" "<<"B2="<<b2<<" "<<"B3="<<b3<<" "<<"B4="<<b4<<" "
     <<"B5="<<b5<<" "<<"B6="<<b6
     <<"SL1="<<SL1<<" "<<"SL2="<<SL2<<" "<<"SL3="<<SL3<<" "<<"SL4="<<SL4<<" "
-    <<"SL5="<<SL5<<" "<<"SW1="<<SW1<<" "<<"SW2="<<SW2<<" "<<"SW3="<<SW3<<" "<<"SW4="
+    <<"SL5="<<SL5<<" "<<"SW1="<<SW1<<" "<<"SW2="<<SW2<<" "<<"SW3="<<SW3<<" "<<"SW4="                  //Displaying Updated Information
     <<SW4<<" "<<"SW5="<<SW5<<" "<<"PL1="<<PL1<<" "<<"PL2="<<PL2<<" "<<"PL3="
     <<PL3<<" "<<"PL4="<<PL4<<" "<<"PL5="<<PL5<<" "<<"PW1="<<PW1<<" "
     <<"PW2="<<PW2<<" "<<"PW3="<<PW3<<" "<<"PW4="<<PW4<<" "<<"PW5="<<PW5<<"error="<<error[0];
